@@ -10,14 +10,18 @@
         //region public methods
         public Equipment(string description, float weight)
         {
-            throw new NotImplementedException();
+           _description = description;
+           _weight = weight;
+            
         }
 
         public string Description
         {
             get
             {
-                throw new NotImplementedException();
+                return _description;
+                
+                //throw new NotImplementedException();
             }
         }
 
@@ -25,7 +29,8 @@
         {
             get
             {
-                throw new NotImplementedException();
+                return (float)_weight;
+                //throw new NotImplementedException();
             }
         }
         //endregion public methods

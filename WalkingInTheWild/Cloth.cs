@@ -10,27 +10,36 @@
         //region public methods
         public Cloth(string brand, bool waterProof = false)
         {
-            throw new NotImplementedException();
+            _brand = brand;
+            _waterProof = waterProof;
+            //throw new NotImplementedException();
         }
 
         public string Brand
         {
             get
             {
-                throw new NotImplementedException();
+                return _brand;
+                //throw new NotImplementedException();
             }
         }
 
         public bool IsWaterProof
         {
+
             get
             {
-                throw new NotImplementedException();
+                return (_waterProof);
             }
             set
             {
-                throw new NotImplementedException();
+                _waterProof = value;
+
             }
+
+           
+
+         
         }
         //endregion public methods
 

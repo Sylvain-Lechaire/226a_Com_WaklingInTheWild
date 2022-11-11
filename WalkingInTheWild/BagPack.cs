@@ -1,4 +1,6 @@
-﻿namespace WalkingInTheWild
+﻿using System.Runtime.InteropServices;
+
+namespace WalkingInTheWild
 {
     public class Bagpack
     {
@@ -10,15 +12,21 @@
 
         //region public methods
         public Bagpack(float maxLoad)
-        {
-            throw new NotImplementedException();
+        { 
+            _maxLoad = maxLoad; 
+            _clothes = new List<Cloth>();   
+            _equipments = new List<Equipment>();    
+
+            //throw new NotImplementedException();
         }
         
         public List<Cloth> Clothes
         {
             get
             {
-                throw new NotImplementedException();
+                
+                return _clothes;
+                //throw new NotImplementedException();
             }
         }
 
@@ -26,7 +34,9 @@
         {
             get
             {
-                throw new NotImplementedException();
+                return _equipments;
+
+               // throw new NotImplementedException();
             }
         }
 
@@ -34,18 +44,24 @@
         {
             get
             {
-                throw new NotImplementedException();
+                return _equipments.Count;
+                return _clothes.Count;
+                return _maxLoad;
+                //throw new NotImplementedException();
             }
         }
 
         public void Add(Cloth cloth)
         {
-            throw new NotImplementedException();
+            
+            this._clothes.Add(cloth);
+            //throw new NotImplementedException();
         }
 
         public void Add(Equipment equipment)
         {
-            throw new NotImplementedException();
+            this.Equipments.Add(equipment);
+            //throw new NotImplementedException();
         }
         //endregion public methods
 
